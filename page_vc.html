@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="file:///C:/Users/ao204/Desktop/%EC%8B%A4%EC%8A%B5/style.css">
+  <link rel="stylesheet" type="text/css" href="C:\Bitnami\wampstack-8.1.1-0\apache2\htdocs\실습/style.css">
 </head>
-<body>
+<body id="target">
   <header>
   <h1><a href="rlaehddml.html">JavaScript</a></h1>
 </header>
@@ -16,9 +16,23 @@
         <li><a href="page_op.html">연산자</a></li>
     </ol>
   </nav>
+  <div id="control">
+  <input type="button" value="white" id="white_btn"/>
+  <input type="button" value="black" id="black_btn"/>
+</div>
   <article>
     <h2>변수와 상수</h2>
     변수는 바뀔수 있는 값이고<br> 상수는 바뀌지 않는 값입니다.
   </article>
+  <script>
+    wbtn=document.getElementById('white_btn');
+    wbtn.addEventListener('click',function(){
+      document.getElementById('target').className='white';
+    })
+    bbtn=document.getElementById('black_btn');
+    bbtn.addEventListener('click',function(){
+      document.get
+    })
+  </script>
 </body>
 </html>
