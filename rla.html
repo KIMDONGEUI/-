@@ -3,20 +3,60 @@
 <head>
 <title>오늘 </title>
 <meta charset="utf-8">
+<style>
+body{
+  margin:0;
+}
+a{
+  color:orange;
+  text-decoration:  none;
+}
+h1{
+  font-size:60px;
+  text-align:center;
+  border-bottom:1px solid green;
+  margin:0;
+  padding:20px;
+
+}
+ ol{
+  border-right:1px solid black;
+  width:150px;
+  margin:0;
+ padding:20px;
+ padding-left: 33px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#article{
+  padding-left: :25px;
+}
+@media(max-width:800px){
+  #grid{
+    display:block;
+  }
+  ol{
+    border-right:none;
+  }
+}
+</style>
 </head>
 <body>
 <h1><a href="main.html"> 나 </a></h1>
-
-<h3>오늘의 인사</h3>
-
-안녕<strong>하세요</strong>
-<a href="https://www.naver.com/" target=_blank" title="인생"> 김동의 </a>
+<div id="grid">
 <ol>
 <li> <a href="rla.html">김</a> </li>
-<li> <a href="ehd.html">동</a> </li>
+<li> <a href="ehd.html" style="color:green; text-decoration:underline">동</a> </li>
 <li> <a href="dl.html">이 </a> </li>
 <li> <a href="home.html">집</a> </li>
 </ol>
+<h3>오늘의 인사</h3>
+
+<div id="article">안녕<strong>하세요</strong>
+<a href="https://www.naver.com/" target=_blank title="인생"> 김동의 </a></div>
+</div>
 <ul>
 <li> 1 </li>
 <li> 2 </li>

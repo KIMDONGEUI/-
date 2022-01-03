@@ -5,28 +5,30 @@
   <meta charset="utf-8">
   <title>숑이 홈페이지</title>
   <style>
-    .area {
-      position: relative;
-      width:100%;
-      padding-bottom:56.25%;
+    #grid{
+      border:5px solid pink;
+      display: grid;
+      grid-template-columns: :2fr 2fr 2fr 2fr;
+
     }
-    .video {
-      position:absolute;
-      width:100%;
-      height:100%;
+    span{
+      margin:0;
+      width:500; height:500;
+    }
+    div{
+      text-align: right;
     }
     </style>
 </head>
 
 <body>
 
-    <div id="area">
-            <iframe id="video"  margin:1000 src="https://www.youtube.com/embed/SLgFuns9T10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-        <div id="area">     <iframe id="video" margin:1000 src="https://www.youtube.com/embed/lp46DxKWuIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-      <div id="area">      <iframe  id="video" margin:1000 src="https://www.youtube.com/embed/neHy-G4o3Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-      <div id="area">      <iframe  id="video" margin:1000 src="https://www.youtube.com/embed/IF-peARfSkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <span id="grid">
+            <iframe id="video" margin:1000 src="https://www.youtube.com/embed/SLgFuns9T10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div> <iframe id="video" margin:1000 src="https://www.youtube.com/embed/lp46DxKWuIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <iframe  id="video" margin:1000 src="https://www.youtube.com/embed/neHy-G4o3Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>    <iframe  id="video" margin:1000 src="https://www.youtube.com/embed/IF-peARfSkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </span>
 
 </body>
 </html>
