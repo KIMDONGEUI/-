@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    ul li {
+        color:green;
+        text-decoration:underline;
+        font-size:30px;
+    }
+    #select {
+        font-size:100px;
+    }
+    #lecture>li {
+        border:1px solid red;
+    }
+    ul, ol{
+        background-color: powderblue;
+    }
+
+</style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li id="select">CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol id="lecture">
+        <li>HTML</li>
+        <li>CSS
+            <ol>
+                <li>selector</li>
+                <li>declaration</li>
+            </ol>
+        </li>
+        <li>JavaScript</li>
+    </ol>
+</body>
+</html>
