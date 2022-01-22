@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: powderblue;
+            height : 200px;
+            display: flex;
+            flex-direction: row;
+        }
+        .item {
+            background-color: tomato;
+            color : white;
+            border : 1px solid white;
+            /* 여백 전체 나눠가질 비율 */
+            flex-grow:1;
+        }
+        .item:nth-child(1){
+            flex-basis: 150px;
+            /* 공간 분담 비율 */
+            flex-shrink: 1;
+        }
+        /* 두번째꺼 컨트롤 */
+        .item:nth-child(2) {
+            /* 비율 우선으로 먹음 */
+            flex-grow:2;
+            flex-basis: 200px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>  
+    </div>
+</body>
+</html>
