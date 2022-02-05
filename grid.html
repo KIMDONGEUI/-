@@ -1,21 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-<style>
-  #grid{
-    border:5px solid pink;
-    display:grid;
-    grid-template-columns: 150px 1fr;
-  }
-div{
-  border:5px solid gray;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <style>
+    #wrapper{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+    }
+    .items{
+      padding: 10px;
+      background-color: bisque;
+    }
+    .items:nth-child(odd){
+      background-color: blue;
+    }
+  </style>
 </head>
 <body>
-  <div id="grid">
-  <div>NAVIGATION</div>
-  <div>ARTICLE</div>
-</div>
+  <div id="wrapper">
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laborum hic, vitae magni numquam explicabo quidem sapiente unde nemo ad ex molestiae aspernatur. Laudantium minima blanditiis animi quo quae vero!</div>
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laborum hic, vitae magni numquam explicabo quidem sapiente unde nemo ad ex molestiae aspernatur. Laudantium minima blanditiis animi quo quae vero!</div>
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laborum hic, vitae magni numquam explicabo quidem sapiente unde nemo ad ex molestiae aspernatur. Laudantium minima blanditiis animi quo quae vero!</div>
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laborum hic, vitae magni numquam explicabo quidem sapiente unde nemo ad ex molestiae aspernatur. Laudantium minima blanditiis animi quo quae vero!</div>
+    <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laborum hic, vitae magni numquam explicabo quidem sapiente unde nemo ad ex molestiae aspernatur. Laudantium minima blanditiis animi quo quae vero!</div>
+  </div>
 </body>
 </html>
